@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.className)}>
         <main className="flex min-h-screen flex-col pb-5">
-          <div className="h-24 flex justify-between items-center w-full container">
+          <div className="h-24 flex justify-center sm:justify-between items-center w-full container">
             <Link href={"/"}>
               <Image
                 src={"/logo.png"}
@@ -34,7 +34,7 @@ export default function RootLayout({
               />
             </Link>
 
-            <a href="tel:+611300991368">
+            <a href="tel:+611300991368" className="hidden sm:block">
               <div className="flex justify-center items-center  border-2 border-primary rounded px-4 py-3">
                 <div className="flex gap-1">
                   <Phone className="text-primary" />
